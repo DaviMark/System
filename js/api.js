@@ -26,10 +26,17 @@ document.addEventListener('DOMContentLoaded', function () {
             console.error('Erro ao enviar dados:', error);
         })
         .finally(() => {
-            alert('Registrado com Sucesso!')
-            // Recarregar a página
-            window.location.reload();
+            Swal.fire({
+                title: 'Sucesso!',
+                text: 'Registrado com Sucesso!',
+                icon: 'success',
+                confirmButtonText: 'Ok'
+            }).then(() => {
+                // Recarregar a página
+                window.location.reload();
+            });
         });
+        
     };
 
     // Adiciona o event listener ao formulário

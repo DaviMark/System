@@ -15537,8 +15537,8 @@ select.form-multi-select {
 }
 
 .dark-theme body,
-[data-coreui-theme=dark] body {
-  background-color: var(--cui-dark-bg-subtle);
+[data-coreui-theme=white] body {
+  background-color: #AABCD0;
 }
 .dark-theme .sidebar,
 [data-coreui-theme=dark] .sidebar {
